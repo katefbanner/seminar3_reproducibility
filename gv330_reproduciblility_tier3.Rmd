@@ -177,6 +177,7 @@ data_scaled <- scale_data(data, c("Happiness_score", "GDP_pc"))
 simple_plot(data_scaled, yvar = yvar, xvar = xvar, outdir = figure_dir, fname = "plot_gdp_pc_function.jpg") # diff names just for show
 simple_plot(data_scaled, yvar = yvar, xvar = xvar, outdir = table_dir, fname = "table_gdp_pc_function.tex")
 
+
 # clean up the workspace again:
 rm(list = ls())
 ```

@@ -29,9 +29,10 @@ table_dir <- "./output/tables/"
 figure_dir <- "./output/figures/"
 data_folder <- "./data/raw/"
 
-dir.create(table_dir)
-dir.create(figure_dir)
-dir.create("./data/processed") # for the processed data we might make later
+dir.create(table_dir, recursive = TRUE)
+dir.create(figure_dir, recursive = TRUE)
+dir.create("./data/processed")
+
 ```
 
 Next up we want to ingest, clean, and munge (what a word) the data:
